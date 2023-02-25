@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Kullanıcı Karşılama Sayfası</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			font-size: 18px;
+		}
+		
+		h1 {
+			font-size: 36px;
+			color: #333;
+			margin-top: 100px;
+		}
+		
+		form {
+			margin-top: 50px;
+		}
+		
+		input[type=text] {
+			padding: 10px;
+			font-size: 18px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 1px 1px 5px #999;
+			width: 250px;
+		}
+		
+		input[type=submit] {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			font-size: 18px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+			margin-left: 10px;
+		}
+		
+		input[type=submit]:hover {
+			background-color: #555;
+		}
+	</style>
+</head>
+<body>
+	<h1>Merhaba!</h1>
+	<form>
+		<label for="username">Adınız:</label>
+		<input type="text" id="username" name="username" placeholder="Adınızı girin">
+		<input type="submit" value="Gönder" onclick="submitForm()">
+	</form>
+	
+	<script>
+		function submitForm() {
+			var username = document.getElementById("username").value;
+			alert("Merhaba " + username + "! Hoş geldin.");
+		}
+	</script>
+</body>
+</html>
