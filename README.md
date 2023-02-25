@@ -1,1 +1,1 @@
-# kullanicikarsilama.html
+# Kullanıcı karşılayan basit html kodu
